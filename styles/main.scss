@@ -18,11 +18,7 @@ $text-gray:#656464;
 }
 
 body{
-    font-family: 'Bai Jamjuree', sans-serif;
     font-family: 'Inter', sans-serif;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Roboto', sans-serif;
 }
 
 /* styles for navigation bar
@@ -107,8 +103,7 @@ body{
 
 
 .underline{
-    color:red;
-    width: 1400px;
+    width:100%;
     border-bottom:1px solid rgba(211, 211, 211, 0.544);
 }
 
@@ -222,22 +217,15 @@ body{
 
 
 .list{
+    line-height: 34px;
 
-    ul li::before{
-        content: "\2022";
-        color:$blue-color;
-        font-weight: bold;
-        display: inline-block; 
-        width: 1em;
-        margin-left: -1em;
-        font-size: 25px;
+    label{
+        font-size: 1.1em;
+        font-weight: 500;
     }
-
-    ul li{
-        list-style:none;
-        line-height: 28px;
-        font-size: 18px;
-}
+    #group{
+        font-size: 50px;
+    }
 }
 
 
@@ -566,8 +554,7 @@ body{
 .activites{
     width: 447px;
     margin: auto;
-
-    padding:10px 10px 10px 50px;
+    padding:0px 0px 0px 50px;
     @include flex;
     justify-content: space-between;
     // gap:50px;
@@ -585,7 +572,7 @@ body{
     color:white;
     font-size: 1em;
     background-color: $blue-color;
-    padding:15px 20px;
+    padding:15px 40px;
     border: none;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -600,6 +587,10 @@ body{
 .member{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+.member-profile{
+    height: 220px;
+}
+
 .member-img{
     img{
         width: 100%;
@@ -625,10 +616,14 @@ body{
 ----------------------------
 --------
 */
+.application-part{
+    background-color:#E5F0FD;
+}
 .application{
     @include flex;
+    width:1200px;
+    margin: auto;
     justify-content: center;
-    background-color:#E5F0FD;
     margin-top: 130px;
     margin-bottom: 130px;
 }
@@ -700,10 +695,33 @@ body{
 
 }
 
-.news{
+.news-frist{
+    background-image: url("/images/Union.png");
+    background-repeat: no-repeat;
+    background-size:150px 150px;
     padding: 20px;
     img{
         width: 100%;
+        border-radius:1em;
+    }
+    h4{
+        font-size: 1.2em;
+        margin-top: 20px;
+        margin-bottom: 25px;
+        color:$text-gray;
+    }
+    span{
+        font-size: 1em;
+        color:$text-gray;
+    }
+}
+
+
+.news-second{
+    padding: 20px;
+    img{
+        width: 100%;
+        border-radius:1em;
     }
     h4{
         font-size: 1.2em;
@@ -717,5 +735,152 @@ body{
     }
     #middle-footer{
         color:$blue-color;
+    }
+}
+
+.news-third{
+    // background-image: url("/images/Union\ \(1\).png");
+    // background-repeat: no-repeat;
+    // background-size:137px 152px;
+    padding: 20px;
+    img{
+        width: 100%;
+        border-radius:1em;
+    }
+    h4{
+        font-size: 1.2em;
+        margin-top: 20px;
+        margin-bottom: 25px;
+        color:$text-gray;
+    }
+    span{
+        font-size: 1em;
+        color:$text-gray;
+    }
+    #middle-footer{
+        color:$blue-color;
+    }
+}
+
+
+/*styles for footer section
+----------------------------
+--------
+*/
+footer{
+    margin-top: 100px;
+}
+.footer-top{
+    background-color: #2B2B39;
+    padding:60px 0;
+}
+.footer-part{
+    @include container;
+    @include flex;
+
+}
+
+
+.footer-items{
+    width: 70%;
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+
+    // justify-content: space-around;
+
+    ul li{
+        list-style: none;
+        line-height: 45px;
+    }
+    ul li a{
+        text-decoration: none;
+        color: #E7E7E7;
+        font-weight: 100;
+    }
+    h3{
+        color:#FFFFFF;
+        font-size: 1.2em;
+        font-weight: 500;
+    }
+}
+
+  
+.footer-info{
+    width: 30%;
+
+    h3{
+        color:#FFFFFF;
+        font-size: 1.2em;
+        line-height: 30px;
+        font-weight: 500;
+    }
+    p{
+        color: #E7E7E7;
+        font-size: 1em;
+        margin: 30px 0;
+        line-height: 24px;
+    }
+ 
+}
+
+
+.search-box {
+    position: relative;
+    input{
+        border: 1px solid #FFFFFF;
+        padding: 9px;
+        border-radius: 10px;
+        background-color: #2B2B39;
+        // position: relative;
+    }
+
+    input:focus{
+        outline: none;
+    }
+    .subscribe-btn{
+        padding:10px;
+        border: none;
+        border-radius: 10px;
+        background-color: #FFFFFF;
+        position:absolute;
+        // top:0;
+        left: 160px;
+        top:px;
+        // bottom: 10px;
+    }
+}
+
+.footer-bottom{
+    background-color: #20202D;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.footer-nav{
+    width: 1200px;
+    margin: auto;
+    @include flex;
+    justify-content: space-between;
+}
+
+
+.authorname{
+    p{
+        color:#FFFFFF;
+        font-size: 0.8em;
+    }
+}
+
+
+.footer-logo{
+    @include flex;
+    gap:5px;
+    h1{
+        color:#FFFFFF;
+        font-size: 1.5em;
+    }
+}
+.footer-icon{
+    svg{
+        margin-right: 5px;
     }
 }
