@@ -38,8 +38,13 @@ body{
 
 .nav-logo{
    @include flex;
-   h1{
-    font-size: 2em;
+   gap:5px;
+   a{
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: 'Poppins';
+    font-weight: 600;
+    color:#2B2B39;
    }
 }
 
@@ -112,6 +117,7 @@ body{
 ---------------------
 --------------
  */
+ 
 .header{
     background: linear-gradient(311.76deg, #D4E7FE -15.24%, #FFFFFF 78.85%);
     padding:30px;
@@ -223,9 +229,6 @@ body{
         font-size: 1.1em;
         font-weight: 500;
     }
-    #group{
-        font-size: 50px;
-    }
 }
 
 
@@ -260,7 +263,8 @@ body{
     margin-bottom: 100px;
 }
 .rating{
-    width: 380px;
+    width: 350px;
+    height: 380px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding:40px;
     .fa-star{
@@ -282,34 +286,41 @@ body{
         font-size: 1em;
         color:$blue-color;
     }
-}
+
 
 .img-icon{
     display:flex;
     align-items: center;
-    gap:5px;
-
-    img{
-        width: 100%;
-        margin-left: -12px;
-    }
     p{
         font-size: 1em;
         color:$text-gray;
-        margin-top: 22px;
         
         span{
             color:$blue-color;
         }
     }
 }
+}
 
+.head-images{
+    @include flex;
+    margin-top: -27px;
+    
+    :nth-child(2){
+        margin-left: -32px;
+    }
+    :nth-child(3){
+        margin-left: -32px;
+    }
+}
 
 
 .award{
-    width: 380px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    padding:40px;
+    width: 350px;
+    height: 380px;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
     h3{
         font-size: 1.2em;
         margin-bottom: 40px;
@@ -321,6 +332,7 @@ body{
         font-size: 1em;
         color:$text-gray;
         line-height: 26px;
+        margin-top: 40px;
         margin-bottom: 40px;
     }
     h4{
@@ -328,9 +340,14 @@ body{
         font-size: 1em;
     }
 }
+
 .git-icon{
     @include flex;
-    margin:25px 0px 25px -10px;
+
+    img{
+        width:40px;
+        height: 40px;
+    }
 
     h5{
         font-size: 1em;
@@ -339,7 +356,11 @@ body{
 }
 
 .our-archivement{
-    width: 380px;
+    width: 400px;
+    height: 380px;
+    // border:2px solid red;
+    padding: 15px;
+    margin-left: 20px;
     h3{
         color: $blue-color;
         font-size: 1.1em;
@@ -356,7 +377,7 @@ body{
         font-size: 1em;
         color:$text-gray;
         line-height: 26px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
       
     }
 
@@ -378,6 +399,7 @@ body{
 */
 .community-section{
     @include container;
+    background: linear-gradient(0deg, rgba(241, 246, 253, 0) 1.63%, #F1F6FD 20.5%, #F1F6FD 58.57%, #FFFFFF 100%);
 }
 .community-details{
     text-align: center;
@@ -405,14 +427,16 @@ body{
     margin: 64px 0;
 }
 
-.member{
+.member-and-friend{
     @include flex;
     gap:36px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding:40px;
     border-radius:10px;
+    background-color: white;
     
 }
+
 .member-info{
     h3{
         font-size: 1.6em;
@@ -432,6 +456,7 @@ body{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding:40px;
     border-radius:10px;
+    background-color: white;
 }
 .group-info{
     h3{
@@ -452,7 +477,9 @@ body{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding:40px;
     border-radius:10px;
+    background-color: white;
 }
+
 .forum-info{
     h3{
         font-size: 1.6em;
@@ -474,6 +501,7 @@ body{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding:40px;
     border-radius:10px;
+    background-color: white;
 }
 .custom-module-info{
     h3{
@@ -493,6 +521,7 @@ body{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding:40px;
     border-radius:10px;
+    background-color: white;
 }
 .list-builder-info{
     h3{
@@ -513,6 +542,7 @@ body{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding:40px;
     border-radius:10px;
+    background-color: white;
 }
 .scrol-effect-info{
     h3{
@@ -584,21 +614,49 @@ body{
     gap:30px;
     margin: 50px 0;
 }
-.member{
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+.frist-member{
+     height: 318px;
+     width: 270px;
+     border-radius: 10px;
+     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-.member-profile{
-    height: 220px;
+.member{
+    height: 318px;
+    width: 270px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    border-radius: 10px;
 }
 
-.member-img{
-    img{
-        width: 100%;
+// .member-profile{
+//     height: 230px;
+//     width: 160px;
+// }
+
+.Fahim{
+    text-align: center;
+    position: relative;
+    padding-top: 30px;
+
+    // img{
+    //     width: 100%;
+    // }
+    :nth-child(1){
+        width:142px;
+        height: 142px;
+    }
+    :nth-child(2){
+        position:absolute;
+        top:18px;
+        left:48px;
+        
     }
 }
 
-.member-title {
+.Fahim-title {
     text-align: center;
+    margin-top: 30px;
+    
     h3{
         font-size: 1.4em;
         color:#2F2C4A;
@@ -609,6 +667,104 @@ body{
         margin-top: 14px;
     }
 }
+
+.Kazi-rahman{
+    position: relative;
+    text-align: center;
+    padding-top: 30px;
+    :nth-child(1){
+        width:170px;
+        height: 170px;
+    }
+    :nth-child(2){
+        position:absolute;
+        top:22px;
+        left:48px;
+    }
+}
+
+
+.Kazi-rahman-title {
+    text-align: center;
+    margin-top: 10px;
+    
+    h3{
+        font-size: 1.4em;
+        color:#2F2C4A;
+    }
+    p{
+        font-size: 1em;
+        color: $text-gray;
+        margin-top: 14px;
+    }
+}
+
+.mastero{
+    position: relative;
+    text-align: center;
+    padding-top: 30px;
+
+    :nth-child(1){
+        width:170px;
+        height: 170px;
+    }
+    :nth-child(2){
+        position:absolute;
+        top:22px;
+        left:48px;
+    }
+
+}
+
+
+.mastero-title {
+    text-align: center;
+    margin-top: 10px;
+    
+    h3{
+        font-size: 1.4em;
+        color:#2F2C4A;
+    }
+    p{
+        font-size: 1em;
+        color: $text-gray;
+        margin-top: 14px;
+    }
+}
+
+.Alia{
+    position: relative;
+    text-align: center;
+    padding-top: 30px;
+
+    :nth-child(1){
+        width:142px;
+        height: 142px;
+    }
+    :nth-child(2){
+        position:absolute;
+        top:17px;
+        left:48px;
+    }
+
+}
+
+.Alia-title {
+    text-align: center;
+    margin-top: 40px;
+    
+    h3{
+        font-size: 1.4em;
+        color:#2F2C4A;
+    }
+    p{
+        font-size: 1em;
+        color: $text-gray;
+        margin-top: 14px;
+    }
+}
+
+
 
 
 
@@ -688,6 +844,7 @@ body{
         margin-top:12px;
     }
 }
+
 .newses{
     @include flex;
     gap:20px;
@@ -696,25 +853,51 @@ body{
 }
 
 .news-frist{
-    background-image: url("/images/Union.png");
-    background-repeat: no-repeat;
-    background-size:150px 150px;
+    // background-image: url("/images/Union.png");
+    // background-repeat: no-repeat;
+    // background-size:150px 150px;
     padding: 20px;
-    img{
-        width: 100%;
-        border-radius:1em;
+   
     }
-    h4{
-        font-size: 1.2em;
-        margin-top: 20px;
-        margin-bottom: 25px;
-        color:$text-gray;
+
+    .news-images{
+        position: relative;
+        img{
+            border-radius:1em;
+        }
+        :nth-child(1){
+            position: relative;
+            z-index:1 ;
+        }
+        :nth-child(2){
+            position:absolute;
+            right: 250px;
+            top:-30px;
+        }
     }
-    span{
-        font-size: 1em;
-        color:$text-gray;
+    
+    .news-info{
+        display: flex;
+        align-items: center;
+        gap:10px;
+        svg{
+            margin-bottom: 38px;
+        }
+        h4{
+            font-size: 1.2em;
+            margin-top: 20px;
+            margin-bottom: 25px;
+            color:$text-gray;
+            text-align: justify;
+        }
+        span{
+            font-size: 1em;
+            color:$text-gray;
+        }
     }
-}
+
+
+
 
 
 .news-second{
@@ -728,6 +911,7 @@ body{
         margin-top: 20px;
         margin-bottom: 25px;
         color:$text-gray;
+        text-align: justify;
     }
     span{
         font-size: 1em;
@@ -747,19 +931,38 @@ body{
         width: 100%;
         border-radius:1em;
     }
-    h4{
-        font-size: 1.2em;
-        margin-top: 20px;
-        margin-bottom: 25px;
-        color:$text-gray;
+    .third-images{
+        position: relative;
+        :nth-child(1){
+            position: relative;
+            z-index:1 ;
+        }
+        :nth-child(2){
+            width: 130px;
+            height: 150px;
+            position:absolute;
+            top:60px;
+            left: 270px;
+            
+        }
+
     }
-    span{
-        font-size: 1em;
-        color:$text-gray;
+    .news-info{
+        h4{
+            font-size: 1.2em;
+            margin-top: 20px;
+            margin-bottom: 25px;
+            color:$text-gray;
+            text-align: justify;
+        }
+        span{
+            font-size: 1em;
+            color:$text-gray;
+            margin-right:20px;
+            text-align: justify;
+        }
     }
-    #middle-footer{
-        color:$blue-color;
-    }
+
 }
 
 
@@ -874,9 +1077,12 @@ footer{
 .footer-logo{
     @include flex;
     gap:5px;
-    h1{
+    a{
+        text-decoration: none;
         color:#FFFFFF;
         font-size: 1.5em;
+        font-weight: 600;
+        font-family: 'Poppins';
     }
 }
 .footer-icon{

@@ -24,9 +24,14 @@ body {
 .nav-logo {
   display: flex;
   align-items: center;
+  gap: 5px;
 }
-.nav-logo h1 {
-  font-size: 2em;
+.nav-logo a {
+  text-decoration: none;
+  font-size: 1.5em;
+  font-family: "Poppins";
+  font-weight: 600;
+  color: #2B2B39;
 }
 
 .nav-items {
@@ -187,9 +192,6 @@ body {
   font-size: 1.1em;
   font-weight: 500;
 }
-.list #group {
-  font-size: 50px;
-}
 
 .network-thumbnail {
   width: 50%;
@@ -222,7 +224,8 @@ body {
 }
 
 .rating {
-  width: 380px;
+  width: 350px;
+  height: 380px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   padding: 40px;
 }
@@ -245,29 +248,36 @@ body {
   font-size: 1em;
   color: #217BF4;
 }
-
-.img-icon {
+.rating .img-icon {
   display: flex;
   align-items: center;
-  gap: 5px;
 }
-.img-icon img {
-  width: 100%;
-  margin-left: -12px;
-}
-.img-icon p {
+.rating .img-icon p {
   font-size: 1em;
   color: #656464;
-  margin-top: 22px;
 }
-.img-icon p span {
+.rating .img-icon p span {
   color: #217BF4;
 }
 
+.head-images {
+  display: flex;
+  align-items: center;
+  margin-top: -27px;
+}
+.head-images :nth-child(2) {
+  margin-left: -32px;
+}
+.head-images :nth-child(3) {
+  margin-left: -32px;
+}
+
 .award {
-  width: 380px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 350px;
+  height: 380px;
+  border-radius: 10px;
   padding: 40px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 .award h3 {
   font-size: 1.2em;
@@ -280,6 +290,7 @@ body {
   font-size: 1em;
   color: #656464;
   line-height: 26px;
+  margin-top: 40px;
   margin-bottom: 40px;
 }
 .award h4 {
@@ -290,7 +301,10 @@ body {
 .git-icon {
   display: flex;
   align-items: center;
-  margin: 25px 0px 25px -10px;
+}
+.git-icon img {
+  width: 40px;
+  height: 40px;
 }
 .git-icon h5 {
   font-size: 1em;
@@ -298,7 +312,10 @@ body {
 }
 
 .our-archivement {
-  width: 380px;
+  width: 400px;
+  height: 380px;
+  padding: 15px;
+  margin-left: 20px;
 }
 .our-archivement h3 {
   color: #217BF4;
@@ -313,7 +330,7 @@ body {
   font-size: 1em;
   color: #656464;
   line-height: 26px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .our-archivement .discover-btn {
   color: white;
@@ -332,6 +349,7 @@ body {
 .community-section {
   width: 1200px;
   margin: 0 auto;
+  background: linear-gradient(0deg, rgba(241, 246, 253, 0) 1.63%, #F1F6FD 20.5%, #F1F6FD 58.57%, #FFFFFF 100%);
 }
 
 .community-details {
@@ -359,13 +377,14 @@ body {
   margin: 64px 0;
 }
 
-.member {
+.member-and-friend {
   display: flex;
   align-items: center;
   gap: 36px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 40px;
   border-radius: 10px;
+  background-color: white;
 }
 
 .member-info h3 {
@@ -385,6 +404,7 @@ body {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 40px;
   border-radius: 10px;
+  background-color: white;
 }
 
 .group-info h3 {
@@ -404,6 +424,7 @@ body {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 40px;
   border-radius: 10px;
+  background-color: white;
 }
 
 .forum-info h3 {
@@ -423,6 +444,7 @@ body {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 40px;
   border-radius: 10px;
+  background-color: white;
 }
 
 .custom-module-info h3 {
@@ -442,6 +464,7 @@ body {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 40px;
   border-radius: 10px;
+  background-color: white;
 }
 
 .list-builder-info h3 {
@@ -461,6 +484,7 @@ body {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 40px;
   border-radius: 10px;
+  background-color: white;
 }
 
 .scrol-effect-info h3 {
@@ -535,26 +559,131 @@ body {
   margin: 50px 0;
 }
 
-.member {
+.frist-member {
+  height: 318px;
+  width: 270px;
+  border-radius: 10px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.member-profile {
-  height: 220px;
+.member {
+  height: 318px;
+  width: 270px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  border-radius: 10px;
 }
 
-.member-img img {
-  width: 100%;
-}
-
-.member-title {
+.Fahim {
   text-align: center;
+  position: relative;
+  padding-top: 30px;
 }
-.member-title h3 {
+.Fahim :nth-child(1) {
+  width: 142px;
+  height: 142px;
+}
+.Fahim :nth-child(2) {
+  position: absolute;
+  top: 18px;
+  left: 48px;
+}
+
+.Fahim-title {
+  text-align: center;
+  margin-top: 30px;
+}
+.Fahim-title h3 {
   font-size: 1.4em;
   color: #2F2C4A;
 }
-.member-title p {
+.Fahim-title p {
+  font-size: 1em;
+  color: #656464;
+  margin-top: 14px;
+}
+
+.Kazi-rahman {
+  position: relative;
+  text-align: center;
+  padding-top: 30px;
+}
+.Kazi-rahman :nth-child(1) {
+  width: 170px;
+  height: 170px;
+}
+.Kazi-rahman :nth-child(2) {
+  position: absolute;
+  top: 22px;
+  left: 48px;
+}
+
+.Kazi-rahman-title {
+  text-align: center;
+  margin-top: 10px;
+}
+.Kazi-rahman-title h3 {
+  font-size: 1.4em;
+  color: #2F2C4A;
+}
+.Kazi-rahman-title p {
+  font-size: 1em;
+  color: #656464;
+  margin-top: 14px;
+}
+
+.mastero {
+  position: relative;
+  text-align: center;
+  padding-top: 30px;
+}
+.mastero :nth-child(1) {
+  width: 170px;
+  height: 170px;
+}
+.mastero :nth-child(2) {
+  position: absolute;
+  top: 22px;
+  left: 48px;
+}
+
+.mastero-title {
+  text-align: center;
+  margin-top: 10px;
+}
+.mastero-title h3 {
+  font-size: 1.4em;
+  color: #2F2C4A;
+}
+.mastero-title p {
+  font-size: 1em;
+  color: #656464;
+  margin-top: 14px;
+}
+
+.Alia {
+  position: relative;
+  text-align: center;
+  padding-top: 30px;
+}
+.Alia :nth-child(1) {
+  width: 142px;
+  height: 142px;
+}
+.Alia :nth-child(2) {
+  position: absolute;
+  top: 17px;
+  left: 48px;
+}
+
+.Alia-title {
+  text-align: center;
+  margin-top: 40px;
+}
+.Alia-title h3 {
+  font-size: 1.4em;
+  color: #2F2C4A;
+}
+.Alia-title p {
   font-size: 1em;
   color: #656464;
   margin-top: 14px;
@@ -643,22 +772,41 @@ body {
 }
 
 .news-frist {
-  background-image: url("/images/Union.png");
-  background-repeat: no-repeat;
-  background-size: 150px 150px;
   padding: 20px;
 }
-.news-frist img {
-  width: 100%;
+
+.news-images {
+  position: relative;
+}
+.news-images img {
   border-radius: 1em;
 }
-.news-frist h4 {
+.news-images :nth-child(1) {
+  position: relative;
+  z-index: 1;
+}
+.news-images :nth-child(2) {
+  position: absolute;
+  right: 250px;
+  top: -30px;
+}
+
+.news-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.news-info svg {
+  margin-bottom: 38px;
+}
+.news-info h4 {
   font-size: 1.2em;
   margin-top: 20px;
   margin-bottom: 25px;
   color: #656464;
+  text-align: justify;
 }
-.news-frist span {
+.news-info span {
   font-size: 1em;
   color: #656464;
 }
@@ -675,6 +823,7 @@ body {
   margin-top: 20px;
   margin-bottom: 25px;
   color: #656464;
+  text-align: justify;
 }
 .news-second span {
   font-size: 1em;
@@ -691,18 +840,32 @@ body {
   width: 100%;
   border-radius: 1em;
 }
-.news-third h4 {
+.news-third .third-images {
+  position: relative;
+}
+.news-third .third-images :nth-child(1) {
+  position: relative;
+  z-index: 1;
+}
+.news-third .third-images :nth-child(2) {
+  width: 130px;
+  height: 150px;
+  position: absolute;
+  top: 60px;
+  left: 270px;
+}
+.news-third .news-info h4 {
   font-size: 1.2em;
   margin-top: 20px;
   margin-bottom: 25px;
   color: #656464;
+  text-align: justify;
 }
-.news-third span {
+.news-third .news-info span {
   font-size: 1em;
   color: #656464;
-}
-.news-third #middle-footer {
-  color: #217BF4;
+  margin-right: 20px;
+  text-align: justify;
 }
 
 /*styles for footer section
@@ -807,9 +970,12 @@ footer {
   align-items: center;
   gap: 5px;
 }
-.footer-logo h1 {
+.footer-logo a {
+  text-decoration: none;
   color: #FFFFFF;
   font-size: 1.5em;
+  font-weight: 600;
+  font-family: "Poppins";
 }
 
 .footer-icon svg {
