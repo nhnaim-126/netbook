@@ -1080,11 +1080,104 @@ footer {
     margin-top: 40px;
     margin-right: 300px;
   }
-  .footer-top .footer-bottom .footer-nav {
-    width: 767px;
+  .footer-bottom .footer-nav {
+    width: 100%;
     margin: auto;
     display: flex;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .nav-bar {
     flex-direction: column;
-    background-color: yellow;
+    width: 1023px;
+    margin: auto;
+  }
+  .nav-bar .nav-logo {
+    margin-right: 40px;
+  }
+  .nav-bar .nav-items {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: -40px;
+  }
+  .header-part {
+    flex-direction: column-reverse;
+    width: 1023px;
+    margin: auto;
+  }
+  .header-part .header-details {
+    margin-left: 60px;
+    margin-top: 30px;
+  }
+  .header-part .header-img {
+    margin-right: 60px;
+    margin-top: 30px;
+  }
+  .social-network {
+    width: 1023px;
+    margin: auto;
+    flex-direction: column;
+  }
+  .social-network .social-network-info {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .archivement {
+    width: 1023px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .community-section {
+    width: 1023px;
+    margin: auto;
+  }
+  .community-section .features {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .active-members {
+    width: 1023px;
+    margin: auto;
+  }
+  .active-members .members {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+  .application {
+    width: 1023px;
+    margin: auto;
+    flex-direction: column;
+    padding-top: 50px;
+  }
+  .lates-news {
+    width: 1023px;
+    margin: auto;
+  }
+  .lates-news .newses {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+  .footer-top {
+    width: 1023px;
+    margin: auto;
+  }
+  .footer-top .footer-part {
+    flex-direction: column;
+    justify-items: center;
+  }
+  .footer-top .footer-part .footer-items {
+    grid-template-columns: repeat(4, 1fr);
+    margin-right: 50px;
+  }
+  .footer-top .footer-part .footer-info {
+    margin-top: 30px;
+  }
+  .footer-bottom .footer-nav {
+    width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */

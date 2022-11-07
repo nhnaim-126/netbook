@@ -10,6 +10,10 @@ $text-gray:#656464;
     width: 1200px;
     margin: 0 auto; 
 }
+@mixin tab{
+    width: 1023px;
+    margin: auto;
+}
 
 *{
     margin:0;
@@ -1244,26 +1248,172 @@ footer{
             }
         }
 
-        .footer-bottom{
-           
-            .footer-nav{
-                width: 767px;
-                margin: auto;
-                display: flex;
-                flex-direction:column;
-                background-color: yellow;
-            }
-           
-            
-        }
 
     }
-
+    .footer-bottom{
+           
+        .footer-nav{
+            width: 100%;
+            margin: auto;
+            display: flex;
+            // flex-direction:column;
+        }
+       
+        
+    }
 }
 
 // Tab device
 
 @media screen and (min-width:768px) and (max-width:1023px) {
-    
+    .nav-bar{
+        flex-direction: column;
+        @include tab;
+        // align-items: center;
+        // justify-content: center;
+        .nav-logo{
+            margin-right: 40px;
+        }
+        .nav-items{
+            margin-top: 50px;
+            margin-bottom:50px;
+            margin-left: -40px;
+        }
+        .nav-button-input{
+            // margin-right: 200px;
+            // margin-left: 50px;
+        }
+  
+    }
+
+
+        
+    .header-part{
+        flex-direction: column-reverse;
+        @include tab;
+        .header-details{
+            margin-left: 60px;
+            margin-top: 30px;
+        }
+        .header-img{
+            margin-right: 60px;
+            margin-top: 30px;
+        }
+    }
+
+
+
+
+
+    .social-network{
+        @include tab;
+        flex-direction: column;
+
+        .social-network-info{
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+    }
+
+
+    .archivement{
+        @include tab;
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+
+
+
+
+    .community-section{
+        @include tab;
+
+        .features{
+            grid-template-columns: repeat(1,1fr);
+
+        }
+
+    }
+
+
+
+    .active-members{
+        @include tab;
+
+        .members{
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            justify-items: center;
+        }
+
+    }
+
+
+
+    .application{
+        @include tab;
+        flex-direction: column;
+        padding-top:50px;
+    }
+
+
+
+    .lates-news{
+        @include tab;
+
+        .newses{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+        }
+
+    }
+
+
+    .footer-top{
+      @include tab;
+
+       .footer-part{
+        flex-direction: column;
+        justify-items: center;
+
+        .footer-items{
+            grid-template-columns: repeat(4,1fr);
+            margin-right: 50px;
+        }
+        .footer-info{
+            margin-top: 30px;
+        }
+
+       }
+   
+    }
+
+
+
+
+    .footer-bottom{
+     
+
+        .footer-nav{
+            width: 100%;
+            
+        }
+    }
+
+
+
     
 }
+
+
+
+
+
+
+
+
