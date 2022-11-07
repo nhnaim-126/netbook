@@ -980,4 +980,111 @@ footer {
 
 .footer-icon svg {
   margin-right: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .nav-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 767px;
+    margin: auto;
+  }
+  .nav-logo {
+    flex-direction: column;
+  }
+  .nav-items li {
+    margin-top: 50px;
+    display: block;
+    margin-left: 220px;
+  }
+  .nav-button-input {
+    margin-top: 50px;
+    flex-direction: column;
+  }
+  .header-part {
+    flex-direction: column-reverse;
+    width: 767px;
+    margin: auto;
+  }
+  .header-part .header-img {
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .social-network {
+    flex-direction: column;
+    width: 767px;
+    margin: auto;
+    margin-top: 50px;
+  }
+  .social-network .network-thumbnail {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  .archivement {
+    flex-direction: column;
+    width: 767px;
+    margin: auto;
+    margin-top: 100px;
+  }
+  .community-section {
+    width: 767px;
+    margin: auto;
+    margin-top: 100px;
+  }
+  .community-section .features {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .active-members {
+    width: 767px;
+    margin: auto;
+  }
+  .active-members .members {
+    flex-direction: column;
+  }
+  .application {
+    flex-direction: column;
+    width: 767px;
+    margin: auto;
+    margin-top: 100px;
+    padding-top: 50px;
+  }
+  .lates-news {
+    width: 767px;
+    margin: auto;
+    margin-top: 100px;
+  }
+  .lates-news .newses {
+    flex-direction: column;
+  }
+  .footer-top {
+    width: 767px;
+    margin: auto;
+  }
+  .footer-top .footer-part {
+    flex-direction: column;
+  }
+  .footer-top .footer-part .footer-items {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    margin-right: 150px;
+  }
+  .footer-top .footer-part .footer-items .community {
+    margin-top: 40px;
+  }
+  .footer-top .footer-part .footer-items .main-link {
+    margin-top: 40px;
+  }
+  .footer-top .footer-part .footer-info {
+    margin-top: 40px;
+    margin-right: 300px;
+  }
+  .footer-top .footer-bottom .footer-nav {
+    width: 767px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+  }
 }/*# sourceMappingURL=main.css.map */
